@@ -23,6 +23,46 @@ public class CartItem {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name ="cart_id")
 	Cart cart;
+
+	public Long getCartItemId() {
+		return cartItemId;
+	}
+
+	public void setCartItemId(Long cartItemId) {
+		this.cartItemId = cartItemId;
+	}
+
+	public String getItemName() {
+		return itemName;
+	}
+
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
 	
 	
 	
